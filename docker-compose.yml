@@ -45,6 +45,3 @@ services:
       - traefik.http.routers.hermes-websecure.middlewares=hermes-auth
       - traefik.http.services.hermes.loadbalancer.server.port=9119
       - traefik.http.middlewares.hermes-auth.basicauth.users=hermes:$$apr1$$xe2M9i6y$$z2sikwE3704Qm7zM5AwZD0
-networks:
-  dokploy-network:
-    external: true
